@@ -22,7 +22,7 @@ export const getRoomQuestions: FastifyPluginCallbackZod = (app) => {
           id: schema.questions.id,
           question: schema.questions.question,
           createdAt: schema.questions.createdAt,
-          anwser: schema.questions.answer,
+          answer: schema.questions.answer,
         })
         .from(schema.questions)
         .where(eq(schema.questions.roomId, roomId))
